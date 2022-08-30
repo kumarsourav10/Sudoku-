@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- mobile status bar color -->
-    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" content="#fff" />
     <title>Sudoku</title>
-    <link rel="shortcut icon" href="./static/images/icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./static/images/icon.png"
+      type="image/x-icon"
+    />
     <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com.css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com.css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
     <!-- box icons -->
-       <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- app css -->
-     <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-       <!-- top nav -->
-         <nav>
-            <div class="nav-container">
-                <a href="#" class="nav-logo">
-                    Sudoku
-                </a>
-                <div class="dark-mode-toggle" id="dark-mode-toggle">
-                    <i class="bx bxs-sun"></i>
-                    <i class="bx bxs-moon"></i>
-                </div>
-            </div>
-         </nav>
-       <!-- end top nav -->
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <!-- top nav -->
+    <nav>
+      <div class="nav-container">
+        <a href="#" class="nav-logo"> Sudoku </a>
+        <div class="dark-mode-toggle" id="dark-mode-toggle">
+          <i class="bx bxs-sun"></i>
+          <i class="bx bxs-moon"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- end top nav -->
 
-       <script src="./static/images/js/app.js"></script>
-</body>
+    <!-- Main -->
+    <div class="main">
+      <div class="screen">
+        <!-- Start screen -->
+        <div class="start-screen active" id="start-screen">
+            <input type="text"  placeholder="Your Name" maxlength="11" class="input-item" \
+            id="input-name">
+            <div class="btn" id="btn-level">
+                Easy
+            </div>
+            <div class="btn" id="btn-continue">Continue</div>
+            <div class="btn btn-blue" id="btn-play">New Game</div>
+        </div>
+        <!-- End Start Screen -->
+      </div>
+    </div>
+    <!-- End Main -->
+    <script src="./static/images/js/app.js"></script>
+  </body>
 </html>
