@@ -183,7 +183,7 @@ nav{
 }
 
 .input-err {
-    border-color: var(--red);
+    border-color: var(--blue);
     animation: bounce .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
